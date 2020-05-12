@@ -1,0 +1,15 @@
+def coin_flip(n):
+    """
+    DOCTYPE !
+    Enter n number of times you need to toss returns a generator and counts numbers of heads and tails
+    """
+    l = ('H' if random.randint(0,1) == 1 else 'T' for i in range(n)) 
+    counth = countt = 0
+    for i in l:
+        if i=='H':
+            counth = counth + 1
+        else:
+            countt = countt + 1   
+        print(i,end=' ')
+    print(f"\nThe number of talis are :{countt},The number of heads are :{counth}") 
+                
